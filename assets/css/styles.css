@@ -742,3 +742,74 @@ header.sticky {
   visibility: visible;
   object-position: -180px 0;
 }
+
+/* project */
+.project {
+  position: relative;
+  background-color: var(--primary-color);
+  padding: 116px 0 63px 0;
+}
+
+.project__row {
+  display: flex;
+  align-items: center;
+  column-gap: 93px;
+}
+
+.project__title {
+  width: 53%;
+  color: #e7f9f9;
+}
+
+.project__title::after {
+  content: "";
+  display: inline-block;
+  width: 66px;
+  height: 2px;
+  background-color: #83a17d;
+  transform: translate(6px, -10px);
+}
+
+.project__desc {
+  color: #6a8383;
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.55em; /* 155.556% */
+}
+
+.project__all-project {
+  display: flex;
+  align-items: center;
+  column-gap: 26px;
+  margin-top: 13px;
+}
+
+.project__link {
+  color: #fff;
+  font-family: "Public Sans";
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.55em; /* 155.556% */
+}
+
+.project__video {
+  margin-top: 65px;
+  width: 100%;
+  height: 544px;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.project__video video {
+  width: 100%;
+  height: 544px;
+  object-fit: cover;
+}
+.project__decor {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
