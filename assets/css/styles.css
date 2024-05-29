@@ -891,3 +891,112 @@ header.sticky {
   font-weight: 500;
   line-height: 1.71em; /* 171.429% */
 }
+
+/* blog  */
+
+.blog {
+  padding: 44px 0 102px 0;
+}
+
+.blog__row {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blog__title {
+  width: 48%;
+}
+
+.blog__title::after {
+  content: "";
+  display: inline-block;
+  width: 66px;
+  height: 2px;
+  background-color: var(--title-color);
+  transform: translate(14px, -10px);
+}
+
+.blog__desc {
+  width: 36%;
+  color: #7d8188;
+  font-family: Poppins;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.62em; /* 162.5% */
+}
+
+.blog__info {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.blog__item {
+  width: calc(33.33% - 20px);
+}
+
+.blog__content {
+  padding-top: 26px;
+  transition: 0.25s;
+}
+
+.blog__item:hover .blog__content {
+  cursor: pointer;
+  padding-left: 30px;
+  padding-right: 7px;
+  background: #fff;
+  border-radius: 0px 0px 20px 20px;
+  box-shadow: 0px 12px 74px 0px rgba(91, 91, 91, 0.25);
+}
+
+.blog__img {
+  display: block;
+  width: 360px;
+  height: 317px;
+  border-radius: 40px 40px 0px 0px;
+  object-fit: cover;
+}
+
+.blog__story {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 26px;
+  border-radius: 20px;
+  background: #e2eddf;
+  color: #000;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2em; /* 120% */
+}
+
+.blog__item-title {
+  margin-top: 20px;
+  height: 98px;
+  color: var(--primary-color);
+  font-family: Poppins;
+  font-size: 1.8rem;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 1.67em; /* 166.667% */
+}
+
+.blog__date {
+  width: 94%;
+  padding: 16px 0 12px 0;
+  color: #575d5e;
+  font-family: Poppins;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2em; /* 120% */
+  border-top: 1px solid #c4c4c4;
+  text-align: end;
+}
