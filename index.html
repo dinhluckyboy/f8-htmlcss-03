@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- styles css -->
     <link rel="stylesheet" href="./assets/css/styles.css" />
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <!-- font  -->
     <!-- public font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -116,7 +117,7 @@
           </a>
         </div>
         <!-- nav  -->
-        <nav class="header__nav">
+        <nav class="header__nav hide-on-tablet-mobile">
           <ul>
             <li class="header__nav-item active">
               <a href="#!" class="header__nav-link">Home</a>
@@ -134,8 +135,43 @@
         </nav>
         <!-- button  -->
         <a href="#!" class="btn header__btn">Sign Up</a>
+        <!-- bars icon  -->
+         <label for="check-bars" class="bars-icon hide-on-pc">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="16" viewBox="0 0 18 16" fill="none">
+            <rect width="18" height="2" fill="#143C3C"/>
+            <rect y="7" width="18" height="2" fill="#143C3C"/>
+            <rect y="14" width="18" height="2" fill="#143C3C"/>
+          </svg>
+         </label>
+         
       </div>
     </header>
+    <!-- mobile header  -->
+     <header class="mobile-header hide-on-pc">
+      <!-- input check  -->
+       <input type="checkbox" name="check-bars" id="check-bars" class="check-bars" hidden>
+       <!-- menu-overlay  -->
+      <label for="check-bars"  class="menu-overlay"></label>
+      <!-- menu-drawer  -->
+      <div class="menu-drawer">
+        <nav class="nav-mobile">
+          <ul>
+            <li class="nav-mobile__item active">
+              <a href="#!" class="nav-mobile__link">Home</a>
+            </li>
+            <li class="nav-mobile__item">
+              <a href="#!" class="nav-mobile__link">About</a>
+            </li>
+            <li class="nav-mobile__item">
+              <a href="#!" class="nav-mobile__link">Blog</a>
+            </li>
+            <li class="nav-mobile__item">
+              <a href="#!" class="nav-mobile__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+     </header>
     <main>
       <section class="hero">
         <div class="container">
@@ -231,7 +267,7 @@
             <h2 class="h2-title service__h2-title">
               We offer a wide range of design services
             </h2>
-            <div class="service__arrow">
+            <div class="service__arrow hide-on-tablet-mobile">
               <div class="service__arrow-left">
                 <svg
                   width="22"
@@ -269,75 +305,92 @@
             </div>
           </div>
 
-          <section class="service__content">
-            <!-- item 1  -->
-              <article class="service__item">
-                <img
-                  src="./assets/img/sevice_1.jpg"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__info">
-                  <p
-                    class="service__text-title line-clamp line-1 word-break-all"
-                  >
-                    Branding
-                  </p>
-                  <p
-                    class="service__text-desc line-clamp line-3"
-                  >
-                    Create beautiful Agency website with Boluethat converts more
-                    visitors than any website.
-                  </p>
-                </div>
-              </article>
-          
-            <!-- item 2  -->
-              <article class="service__item">
-                <img
-                  src="./assets/img/sevice_2.jpg"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__info">
-                  <p
-                    class="service__text-title line-clamp line-1 word-break-all"
-                  >
-                    Web Design
-                  </p>
-                  <p
-                    class="service__text-desc line-clamp line-3"
-                  >
-                    Create beautiful Agency website with Boluethat converts more
-                    visitors than any website.
-                  </p>
-                </div>
-              </article>
-           
-            <!-- item 3  -->
+          <!-- mobile-arrow  -->
+           <div class="mobile-arrow">
+            <!-- arrow left  -->
+            <div class="mobile-arrow-left hide-on-pc">
+              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 5.23529H1.11482M1.11482 5.23529L5 1M1.11482 5.23529L5 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </div>
+
+            <!-- service content  -->
+            <section class="service__content">
+              <!-- item 1  -->
+                <article class="service__item">
+                  <img
+                    src="./assets/img/sevice_1.jpg"
+                    alt=""
+                    class="service__img"
+                  />
+                  <div class="service__info">
+                    <p
+                      class="service__text-title line-clamp line-1 word-break-all"
+                    >
+                      Branding
+                    </p>
+                    <p
+                      class="service__text-desc line-clamp line-3"
+                    >
+                      Create beautiful Agency website with Boluethat converts more
+                      visitors than any website.
+                    </p>
+                  </div>
+                </article>
             
-              <article class="service__item">
-                <img
-                  src="./assets/img/sevice_3.jpg"
-                  alt=""
-                  class="service__img"
-                />
-                <div class="service__info">
-                  <p
-                    class="service__text-title line-clamp line-1 word-break-all"
-                  >
-                    Graphic Design
-                  </p>
-                  <p
-                    class="service__text-desc line-clamp line-3"
-                  >
-                    Create beautiful Agency website with Boluethat converts more
-                    visitors than any website.
-                  </p>
-                </div>
-              </article>
-          
-          </section>
+              <!-- item 2  -->
+                <article class="service__item">
+                  <img
+                    src="./assets/img/sevice_2.jpg"
+                    alt=""
+                    class="service__img"
+                  />
+                  <div class="service__info">
+                    <p
+                      class="service__text-title line-clamp line-1 word-break-all"
+                    >
+                      Web Design
+                    </p>
+                    <p
+                      class="service__text-desc line-clamp line-3"
+                    >
+                      Create beautiful Agency website with Boluethat converts more
+                      visitors than any website.
+                    </p>
+                  </div>
+                </article>
+             
+              <!-- item 3  -->
+              
+                <article class="service__item">
+                  <img
+                    src="./assets/img/sevice_3.jpg"
+                    alt=""
+                    class="service__img"
+                  />
+                  <div class="service__info">
+                    <p
+                      class="service__text-title line-clamp line-1 word-break-all"
+                    >
+                      Graphic Design
+                    </p>
+                    <p
+                      class="service__text-desc line-clamp line-3"
+                    >
+                      Create beautiful Agency website with Boluethat converts more
+                      visitors than any website.
+                    </p>
+                  </div>
+                </article>
+            </section>
+            <!-- arrow right  -->
+            <div class="mobile-arrow-right hide-on-pc">
+              <svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M5 5.23529H4.88518M4.88518 5.23529L1 1M4.88518 5.23529L1 9" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>   
+            </div>
+           </div>
+
         </div>
       </section>
       <section class="about">
@@ -628,10 +681,17 @@
               <div class="footer__social-icon"><img src="./assets/img/fb.svg" alt=""></div>
               <div class="footer__social-icon"><img src="./assets/img/instagram.svg" alt=""></div>
               <div class="footer__social-icon"><img src="./assets/img/twitter.svg" alt=""></div>
+              <label class="footer__bars" for="check-bars-footer">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="22" viewBox="0 0 25 22" fill="none">
+                  <rect width="24.75" height="2.75" fill="white"/>
+                  <rect y="9.625" width="24.75" height="2.75" fill="white"/>
+                  <rect y="19.25" width="24.75" height="2.75" fill="white"/>
+                </svg>
+              </label>
             </div>
           </section>
           <!-- info  -->
-          <section class="footer__info">
+          <section class="footer__info hide-on-tablet-mobile">
             <ul>
               <li><a href="#!">Pages</a></li>
               <li><a href="">Home</a></li>
@@ -664,6 +724,50 @@
         </section>
       </div>
     </footer>
+    <!-- footer-mobile  -->
+     <footer class="footer-mobile hide-on-pc">
+      <!-- check bars  -->
+      <input type="checkbox" name="check-bars-footer" id="check-bars-footer" class="check-bars-footer" hidden>
+      <!-- overlay  -->
+      <label for="check-bars-footer" class="footer-overlay"></label>
+      <!-- drawer  -->
+      <div class="footer-drawer">
+        <div class="container">
+          <section class="footer-drawer__info">
+            <ul>
+              <li><a href="#!">Pages</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Blog Post</a></li>
+            </ul>
+            <ul>
+              <li><a href="#!">Product</a></li>
+              <li><a href="">Home</a></li>
+              <li><a href="">About</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Blog Post</a></li>
+            </ul>
+            <ul>
+              <li><a href="#!">Overview</a></li>
+              <li><a href="">Home 1</a></li>
+              <li><a href="">Home 2</a></li>
+              <li><a href="">Home 3</a></li>
+              <li><a href="">Pricing</a></li>
+            </ul>
+            <ul>
+              <li><a href="#!">About us</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">Investor</a></li>
+              <li><a href="">Blog</a></li>
+              <li><a href="">Press</a></li>
+            </ul>
+          </section>
+
+        </div>
+
+      </div>
+     </footer>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
       new WOW().init();
